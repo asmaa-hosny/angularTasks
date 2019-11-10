@@ -12,6 +12,7 @@ export class LoginComponent implements OnInit {
   Emppass:string;
   flag:boolean;
   msgerror:boolean;
+  index:number;
   
   constructor(private ck:SignInService, private nav :Router) { }
 
@@ -20,8 +21,11 @@ export class LoginComponent implements OnInit {
   signin()
   {
      this.flag= this.ck.checkUser(this.Empmail , this.Emppass); 
+     console.log(); 
      if(this.flag){
-        this.nav.navigate(['home'])
+       this.index=this.Empmail.indexOf('@');
+       console.log(this.index)
+        this.nav.navigate(['home/'+this.Empmail.substring(0,this.index)])
      }
      else
      {

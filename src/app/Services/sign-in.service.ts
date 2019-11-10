@@ -7,7 +7,7 @@ export class SignInService {
 
   constructor() { }
   checkUser(email , pass){
-    if(email=='as@gmail.com' && pass=='12345')
+    if(email=='asmaa-hosny@gmail.com' && pass=='12345')
     return true; 
     else
     return false;
