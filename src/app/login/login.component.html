@@ -1,0 +1,10 @@
+<form class="form-signin">
+    <h1>Please sign in</h1>
+    <label for="inputEmail" class="sr-only">Email address</label>
+    <input type="email" name="email" id="inputEmail" [(ngModel)]='Empmail' class="form-control" placeholder="Email address" required autofocus>
+    <label for="inputPassword" class="sr-only">Password</label>
+    <input type="password" name="password"id="inputPassword"[(ngModel)]='Emppass' class="form-control" placeholder="Password" required>
+   
+    <button class="btn btn-lg btn-primary btn-block" (click)='signin()' type="submit">Sign in</button>
+    <span *ngIf='msgerror' class="MsgError">Wrong user or password</span>
+  </form>

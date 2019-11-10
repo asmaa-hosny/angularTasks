@@ -1,0 +1,61 @@
+
+
+.container {
+  max-width: 960px;
+  margin-top: 79px;
+}
+p{
+  margin-bottom: 5rem;
+  line-height: 25px;
+  color: #171797;
+}
+.pricing-header {
+  max-width: 700px;
+}
+
+.card-deck .card {
+  min-width: 220px;
+  height: 250px;
+  color: #171797;;
+}
+.header{
+  margin-bottom: 56px;
+ background: darkslateblue;
+  color: white;
+  float: left;
+  width: 100%;
+  margin-top: -30px;
+}
+.headtxt{
+  width: 50%;
+    
+    margin: 30px auto;
+}
+#title{
+    padding-bottom: 20px;
+    font-family: monospace;
+    font-size: 40px;
+    text-align: center;
+}
+.footer{
+    background: #6150b3;
+    padding: 25px 15px;   
+    color: #fff;
+    text-align: center;
+}
+ul{
+  
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+}
+a{
+  color:white;
+  margin: 20px;
+  font-size: 12px;
+}
+.copyright{
+  clear: both;
+    text-align: center;
+    margin-top: 40px;
+}
